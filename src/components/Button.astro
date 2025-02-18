@@ -6,18 +6,17 @@ const { variant= "primary", size = "medium" } = Astro.props;
  
 //Definer den styling (Tailwind classes, der gør sig gældende for alle knapper
 
-const buttonStyling = "m-10  bold px-8 py-2 my-4 rounded-full cursor-pointer duration-200"; 
+const buttonStyling = "m-10  bold px-8 py-2 my-auto rounded-full cursor-pointer duration-200"; 
 
  
 //Definer den styling (Tailwind classes), der gør sig gældende for de forskellige varianter 
 
 const variantClasses = {
 
-"primary": "bg-orange-500 text-white font-semibold hover:bg-orange-700 hover:scale-110",
+"primary": "bg-orange-400 text-white font-semibold hover:bg-orange-600 hover:scale-110",
 
-"secondary": "border-2 border-orange-500 text-orange-500 hover:border-0 hover:bg-violet-700 hover:scale-110 hover:text-white",
+"secondary": "border-2 border-orange-400 text-orange-500 hover:border-0 hover:bg-violet-700 hover:scale-110 hover:text-white",
 
-"ghost": "bg-violet-100 text-violet-400",
 
 };
 
