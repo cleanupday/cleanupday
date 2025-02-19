@@ -6,6 +6,19 @@
 
 @theme {
   /* Her tilføjes theme variable // tokens */
+
+  /* Costum Colors */
+  --color-neutral: #F8F8F8;
+  --color-accent-orange: #FFA760;
+  --color-light-green: #A7E4CB;
+  --color-medium-green: #31B494;
+  --color-dark-green: #0A5E58;
+  --color-dark-blue: #144162;
+
+  --color-green1: #28948C;
+
+  /* Costum theme fonts */
+  --font-sans: "Poppins";
 }
 
 @layer base {
