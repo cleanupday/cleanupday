@@ -11,28 +11,33 @@ import Footer from "../components/Footer.astro";
 
 <MainLayout title="Titel">
 	<article>
-		<article>
+	<article class="[&_section]:pb-12 [&_h1]:text-5xl lg:[&_h1]:text-[64px] [&_h1]:uppercase [&_h1]:font-bold">
 			<!-- Hero -->
-			<section>
-				<div>
-					<h1>Digital Cleanup Day</h1>
-					<p>Lad os rydde op i vores digitale affald på <span>World Cleanup Day</span> og gøre vores del for miljøet!</p>
-					<Button>Inviter en ven</Button>
-					<Button>Registrer dit bidrag</Button>
-				</div>
-				<div>
-					<img src="/illustrations/megaphone.svg" alt="">
-					<p>
-					Save the date <br>
-					15. Marts 2025
-					</p>
-				</div>
+			<section class="px-[10px] bg-dark-green grid gap-10 justify-items-center">
 				<img src="/illustrations/hero.svg" alt="">
+				<div class="text-white [&_*]:mb-4">
+					<h1 class="mb-4">Digital <br> Cleanup Day</h1>
+					<p>Lad os rydde op i vores digitale affald på <span class="text-accent-orange">World Cleanup Day</span> og gøre vores del for miljøet!</p>
+					<div class="flex gap-8">
+						<Button variant="secondary" size="small">Inviter en ven</Button>
+						<Button size="small">Registrer dit bidrag</Button>
+					</div>
+				</div>
+				<div class="[&_span]:text-white grid grid-rows-1 animate-bounce">
+					<div class="row-start-1 col-start-1 "><img src="/illustrations/shape.svg" alt=""></div>
+					<div class="row-start-1 col-start-1 m-auto z-2">
+						<img src="/illustrations/megaphone.svg" alt="" class="mx-auto">
+						<p class="text-xl font-bold uppercase text-green1">
+						<span>Save the date</span> <br>
+						15. Marts 2025 
+						</p>
+					</div>
+				</div>
 			</section>
-			
+			<img src="/public/dividers/bottom1.svg" alt="" class="mt-0">
+
 			<!-- Short About -->
-			<section>
-				
+			<section class="px-[10px] bg-neutral grid gap-10 justify-items-center">
 				<div>
 					<img src="/illustrations/trash.svg" alt="">
 					<div>
@@ -88,6 +93,6 @@ import Footer from "../components/Footer.astro";
 			<!-- form -->
 			 <section></section>
 
-		</article>
+	</article>
 	</article>
 </MainLayout>
