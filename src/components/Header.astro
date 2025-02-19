@@ -4,7 +4,7 @@ import Button from "./Button.astro";
 
 ---
 <header class="" style="background-color: #0A5E58">
-    <section class="grid grid-cols-2">
+    <section class="flex flex-nowrap justify-between">
         <div class="pl-20 py-4">
             <img src="icons/logo.png" alt="">
         </div>
@@ -15,7 +15,8 @@ import Button from "./Button.astro";
                 <li> <Link href="/ressourcesite">Resources</Link></li>
                 <li> <Link href="">World Clean Up Day</Link></li>
             </ul>
-             <Button>Registrer dit bidrag</Button>
+            <div class="">
+            <Button>Registrer dit bidrag</Button></div> 
         </nav>
        
     </div>
