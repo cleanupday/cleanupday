@@ -10,11 +10,40 @@ import Footer from "../components/Footer.astro";
 ---
 
 <MainLayout title="Titel">
-	<article>
 	<article class="[&_section]:pb-12 [&_h1]:text-5xl lg:[&_h1]:text-[64px] [&_h1]:uppercase [&_h1]:font-bold bg-neutral">
 			<!-- Hero -->
+			<section class="px-[10px] bg-dark-green ">
+				<div class="lg:flex lg:max-w-[1200px] mx-auto">
+					<div class="lg:order-2">
+						<img src="/illustrations/hero.svg" alt="">
+					</div>
+					<div class="content-center">
+						<div class="text-white [&_*]:mb-4">
+							<h1 class="mb-4">Digital <br> Cleanup Day</h1>
+							<p>Lad os rydde op i vores digitale affald på <span class="text-accent-orange">World Cleanup Day</span> og gøre vores del for miljøet!</p>
+							<div class="flex gap-8">
+								<Button variant="secondary" size="small">Inviter en ven</Button>
+								<Button size="small">Registrer dit bidrag</Button>
+							</div>
+						</div>
+						<div class="[&_span]:text-white grid sm:grid-cols-1 lg:grid-cols-2 animate-bounce">
+							<div class="row-start-1 col-start-1 m-auto"><img src="/illustrations/shape.svg" alt=""></div>
+							<div class="row-start-1 col-start-1 m-auto z-2">
+								<img src="/illustrations/megaphone.svg" alt="" class="mx-auto">
+								<p class="text-xl font-bold uppercase text-green1">
+								<span>Save the date</span> <br>
+								15. Marts 2025 
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				
+			</section>
+			<!-- Hero 
 			<section class="px-[10px] bg-dark-green grid gap-10 justify-items-center lg:grid lg:grid-cols-3">
 				<img src="/illustrations/hero.svg" alt="" class="lg:col-start-2 lg:col-span-2">
+				
 				<div class="text-white [&_*]:mb-4 lg:row-start-1">
 					<h1 class="mb-4">Digital <br> Cleanup Day</h1>
 					<p>Lad os rydde op i vores digitale affald på <span class="text-accent-orange">World Cleanup Day</span> og gøre vores del for miljøet!</p>
@@ -33,13 +62,13 @@ import Footer from "../components/Footer.astro";
 						</p>
 					</div>
 				</div>
-			</section>
-			<img src="/dividers/bottom1.svg" alt="" class="mt-0">
+			</section>   -->
+			<img src="/dividers/bottom1.svg" alt="" class=" mt-0">
 
 			<!-- Short About -->
-			<section class="px-[10px] text-dark-blue bg-neutral grid gap-10 justify-items-center [&_h2]:text-[36px] [&_h2]:uppercase [&_h2]:font-bold lg:-mb-32">
+			<section class="px-[10px] text-dark-blue bg-neutral grid gap-32 justify-items-center [&_h2]:text-[36px] [&_h2]:uppercase [&_h2]:font-bold lg:-mb-32">
 				<div class="lg:grid lg:grid-cols-2 gap-24 lg:max-w-[1100px] content-center">
-					<img src="/illustrations/trash.svg" alt="" class="pt-24 pb-12">
+					<img src="/illustrations/trash.svg" alt="" class="pt-24 pb-12 lg:py-0">
 					<div>
 						<h2>Hvad er digitalt affald?</h2>
 						<p>Den digitale verden ligner den fysiske verden, vi lever i. <br><br>
@@ -55,6 +84,7 @@ import Footer from "../components/Footer.astro";
 				</div>
 				
 				<div class="lg:grid lg:grid-cols-2 gap-24 lg:max-w-[1100px]">
+					<img src="/illustrations/character.svg" alt="" class="sm:pt-24 sm:pb-12 lg:col-start-2 lg:row-start-1 lg:py-0">
 					<div>
 						<h2>HVAD ER “DIGITAL CLEANUP DAY”?</h2>
 						<p>Digital Cleanup Day er en dag dedikeret til at rydde op i vores digitale liv, 
@@ -64,7 +94,7 @@ import Footer from "../components/Footer.astro";
 							og opfordre både enkeltpersoner og virksomheder til at rydde op 
 							og omstrukturere deres online tilstedeværelse.</p>
 					</div>
-					<img src="/illustrations/character.svg" alt="" class="sm:pt-24 sm:pb-12">
+					
 				</div>
 			</section>
 
@@ -150,7 +180,7 @@ import Footer from "../components/Footer.astro";
 			<!-- In numbers -->
 			<section class=" bg-dark-green text-white [&_span]:text-accent-orange">
 				<h1 class="max-w-200 pt-20 lg:max-w-[1000px] lg:mx-auto lg:text-center">Lad os rydde op i vores digitale affald på <span>World Cleanup Day</span> og gøre vores del for miljøet!</h1>
-				<div class="lg:grid grid-cols-3 mb-18">
+				<div class="lg:grid grid-cols-3 mb-18 max-w-[1400px] mx-auto">
 					<div class="mt-18 flex flex-row justify-center text-center">
 						<div class="sm:justify-items-center-center">
 							<img src="/illustrations/group.svg" alt="">
@@ -211,7 +241,6 @@ import Footer from "../components/Footer.astro";
 						</form>
 					</div>
 				</div>
-	</article>
 	</article>
 </MainLayout>
 
