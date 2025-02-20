@@ -176,35 +176,39 @@ import Footer from "../components/Footer.astro";
 			</section>
 
 			<!-- form -->
-			<div class="bg-accent-orange">
-				 <section class="lg:grid">
-					<div class="text-white">
+				 <div class="lg:grid lg:grid-cols-2">
+					<div class="bg-accent-orange text-white p-12">
 						<h4 class="pb-8">Vær cool – giv ikke global opvarmning næring med digitalt affald</h4>
 						<h2>SKÆR NED PÅ DIT CO2”-AFTRYK VED AT DELTAGE I DIGITAL CLEANUP DAY</h2>
 					</div>
-					<div class="bg-gray-200">
-						<form action="" class="[&_div]:pb-8 [&_label]:border-0">
+					<div class="bg-gray-200 p-12">
+						<form action="" class="[&_div]:pb-8 [&_input]:border-0 [&_input]:rounded-md">
 							<div class="grid grid-cols-1">
 								<label for="name">Dit navn:</label>
-								<input type="text" id="name" placeholder="Navn">
+								<input type="text" id="name" placeholder="">
 							</div>
 							<div class="grid grid-cols-1">
 								<label for="email">Email</label>
-								<input type="text" id="name" placeholder="Email">
+								<input type="text" id="name" placeholder="">
 							</div>
 							<div class="grid grid-cols-1">
 								<label for="amount">Mængde slettet (i GB)</label>
-								<input type="text" id="name" placeholder="0 GB">
+								<input type="text" id="name" placeholder="">
 							</div>
 							<div class="text-xs">
 								<input type="checkbox">
-								<label for="postnord" checked="checked">* Jeg er enig i <span class="text-accent-orange">Let's Do It, World's vilkår og betingelser</span></label>
+								<label for="agree" checked="checked">* Jeg er enig i <span class="text-accent-orange">Let's Do It, World's vilkår og betingelser</span></label>
+							</div>
+							<div class="text-xs">
+								<input type="checkbox">
+								<label for="newsletter" checked="checked">Jeg vil gerne tilmelde mig nyheder fra World Cleanup Day</span></label>
+							</div>
+							<div class="">
+								<Button variant="primary" size="medium">Indsend</Button>
 							</div>
 						</form>
 					</div>
-				 </section>
-			</div>
-
+				</div>
 	</article>
 	</article>
 </MainLayout>
