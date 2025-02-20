@@ -11,7 +11,7 @@ import Footer from "../components/Footer.astro";
 
 <MainLayout title="Titel">
 	<article>
-	<article class="[&_section]:pb-12 [&_h1]:text-5xl lg:[&_h1]:text-[64px] [&_h1]:uppercase [&_h1]:font-bold">
+	<article class="[&_section]:pb-12 [&_h1]:text-5xl lg:[&_h1]:text-[64px] [&_h1]:uppercase [&_h1]:font-bold bg-neutral">
 			<!-- Hero -->
 			<section class="px-[10px] bg-dark-green grid gap-10 justify-items-center lg:grid lg:grid-cols-3">
 				<img src="/illustrations/hero.svg" alt="" class="lg:col-start-2 lg:col-span-2">
@@ -34,12 +34,12 @@ import Footer from "../components/Footer.astro";
 					</div>
 				</div>
 			</section>
-			<img src="/public/dividers/bottom1.svg" alt="" class="mt-0">
+			<img src="/dividers/bottom1.svg" alt="" class="mt-0">
 
 			<!-- Short About -->
-			<section class="px-[10px] bg-neutral grid gap-10 justify-items-center">
+			<section class="px-[10px] bg-neutral grid gap-10 justify-items-center [&_h2]:text-[36px] [&_h2]:uppercase [&_h2]:font-bold">
 				<div>
-					<img src="/illustrations/trash.svg" alt="">
+					<img src="/illustrations/trash.svg" alt="" class="pt-24 pb-12">
 					<div>
 						<h2>Hvad er digitalt affald?</h2>
 						<p>Den digitale verden ligner den fysiske verden, vi lever i. <br><br>
@@ -55,12 +55,11 @@ import Footer from "../components/Footer.astro";
 				</div>
 				
 				<div>
-					<img src="" alt="">
+					<img src="/illustrations/character.svg" alt="" class="pt-24 pb-12">
 					<div>
 						<h2>HVAD ER “DIGITAL CLEANUP DAY”?</h2>
 						<p>Digital Cleanup Day er en dag dedikeret til at rydde op i vores digitale liv, 
 							ligesom vi rydder op i vores fysiske miljø på World Cleanup Day. <br><br>
-	
 							Nu i sit femte år og organiseret af Let's Do It World har Digital 
 							Cleanup Day til formål at øge bevidstheden om digital forurening 
 							og opfordre både enkeltpersoner og virksomheder til at rydde op 
@@ -68,23 +67,83 @@ import Footer from "../components/Footer.astro";
 					</div>
 				</div>
 			</section>
+
+			<img src="/dividers/top1.svg" alt="">
 			
 			<!-- Hook -->
-			<section>
+			<section class="bg-dark-green">
 				<div>
-					<img src="" alt="">
-					<h1>HJÆLP MED AT REDDE VERDENEN EN DIGITAL SLETNING AF GANGEN</h1>
+					<img src="/illustrations/bulldozer.svg" alt="">
+					<h1 class="text-white">HJÆLP MED AT REDDE VERDENEN EN DIGITAL SLETNING AF GANGEN</h1>
 				</div>
 			</section>
 
+			<img src="/dividers/bottom1.svg" alt="">
+
 			<!-- Problemet med digitalt affald... -->
-			<section>
-				<h2>
-					<div>
-						<img src="" alt="">
-						<p></p>
+			<section id="facts" class="text-dark-blue">
+				<h2 class="lg:mx-auto text-center pb-8">Problemet med <br>digitalt affald...</h2>
+				<div class=" lg:grid lg:grid-cols-3 max-w-[1200px] mx-auto [&_img]:pb-4">
+					<div class="[&_div]:   py-8 flex justify-center">
+						<div>
+							<img src="/facts/bitcoin.svg" alt="">
+							<p>Det kræver mere energi at mine Bitcoin, end hele New Zealand forbruger på et år.</p>
+						</div>
 					</div>
-				</h2>
+					<div class="[&_div]:   py-8 flex justify-center">
+						<div>
+							<img src="/facts/co2.svg" alt="">
+							<p>Internettet producerer mere end 900 millioner tons CO2 hvert år..</p>
+						</div>
+					</div>
+					<div class="[&_div]:   py-8 flex justify-center">
+						<div>
+							<img src="/facts/solar.svg" alt="">
+							<p>Ubegrænset datakonsum i dag kræver 3 gange mere energi, end alle verdens solpaneler kan producere.</p>
+						</div>
+					</div>
+					<div class="[&_div]:   py-8 flex justify-center">
+						<div>
+							<img src="/facts/emailenergy.svg" alt="">
+							<p>Én e-mail udleder i gennemsnit 4g CO2 = kulstofaftrykket fra en tændt lyspære i 6 minutter</p>
+						</div>
+					</div>
+					<div class="[&_div]:   py-8 flex justify-center">
+						<div>
+							<img src="/facts/worlddata.svg" alt="">
+							<p>På blot ét år (2007) blev der skabt en zettabyte data på verdensplan I 2010 var dette fordoblet. </p>
+						</div>
+					</div>
+					<div class="[&_div]:   py-8 flex justify-center">
+						<div>
+							<img src="/facts/email2.svg" alt="">
+							<p>320 milliarder e-mails sendes hver dag og 62 billioner spam-e-mails hvert år = 20 millioner tons CO2.</p>
+						</div>
+					</div>
+					<div class="[&_div]:   py-8 flex justify-center">
+						<div>
+							<img src="/facts/trees.svg" alt="">
+							<p>I 2035 vil vi skabe mere end 2.000 zettabytes. <br> <br>
+								For at printe én zettabyte data ville der være brug for papir fra 20 billioner træer. <br> <br>
+								Der er kun omkring 3,5 billioner træer tilbage på planeten, så det er ikke muligt.</p>
+						</div>
+					</div>
+					<div class="[&_div]:   py-8 flex justify-center">
+						<div>
+							<img src="/facts/servers.svg" alt="">
+							<p>I 2022 blev omkring 70 millioner servere brugt til at lagre data. <br><br>
+								Hver af dem forårsagede produktionen af 1–2 tons CO2. <br><br>
+								Det år blev omkring 20 millioner af dem til e-affald. <br><br>
+								99% af data blev skabt inden for de sidste 10 år.</p>
+						</div>
+					</div>
+					<div class="[&_div]:   py-8 flex justify-center">
+						<div>
+							<img src="/facts/waste.svg" alt="">
+							<p>90% af al data bliver aldrig tilgået igen efter 3 måneder.</p>
+						</div>
+					</div>
+				</div>
 			</section>
 
 			<!-- In numbers -->
@@ -96,3 +155,36 @@ import Footer from "../components/Footer.astro";
 	</article>
 	</article>
 </MainLayout>
+
+<style>
+	section{
+		padding: 24px 10px;
+	}
+
+	#facts p{
+		max-width: 25ch;
+	}
+	#facts img{
+		max-height: 100px;
+	}
+
+	/* h1{
+		font-size: 64px;
+		font-weight: bold;
+	} */
+	h2{
+		font-size: 36px;
+		font-weight: bold;
+	}
+	h3{
+		font-size: 24px;
+		font-weight: bold;
+	}
+	h4{
+		font-size: 16px;
+		font-weight: bold;
+	}
+	p{
+		font-size: 16px;
+	}
+</style>
