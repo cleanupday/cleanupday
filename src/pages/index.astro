@@ -67,7 +67,7 @@ import Footer from "../components/Footer.astro";
 
 			<!-- Short About -->
 			<section class="px-[10px] text-dark-blue bg-neutral grid gap-32 justify-items-center [&_h2]:text-[36px] [&_h2]: [&_h2]:font-bold lg:-mb-32">
-				<div class="lg:grid lg:grid-cols-2 gap-24 lg:max-w-[1100px] content-center">
+				<div class="lg:grid lg:grid-cols-2 gap-24 lg:max-w-[1100px] content-center elementmedanimation2">
 					<img src="/illustrations/trash.svg" alt="" class="pt-24 pb-12 lg:py-0">
 					<div>
 						<h2>Hvad er digitalt affald?</h2>
@@ -83,7 +83,7 @@ import Footer from "../components/Footer.astro";
 					</div>
 				</div>
 				
-				<div class="lg:grid lg:grid-cols-2 gap-24 lg:max-w-[1100px]">
+				<div class="lg:grid lg:grid-cols-2 gap-24 lg:max-w-[1100px] elementmedanimation1">
 					<img src="/illustrations/character.svg" alt="" class="sm:pt-24 sm:pb-12 lg:col-start-2 lg:row-start-1 lg:py-0">
 					<div>
 						<h2>Hvad er "Digital <br>Cleanup Day"?</h2>
@@ -113,7 +113,7 @@ import Footer from "../components/Footer.astro";
 			<!-- Problemet med digitalt affald... -->
 			<section id="facts" class="text-dark-blue">
 				<h2 class="lg:mx-auto text-center pb-8">Problemet med digitalt affald...</h2>
-				<div class=" lg:grid lg:grid-cols-3 max-w-[1200px] mx-auto [&_img]:pb-4">
+				<div class=" lg:grid lg:grid-cols-3 max-w-[1200px] mx-auto [&_img]:pb-4 elementmedanimation1">
 					<div class="[&_div]:   py-8 flex justify-center">
 						<div>
 							<img src="/facts/bitcoin.svg" alt="">
@@ -276,3 +276,38 @@ import Footer from "../components/Footer.astro";
 		font-size: 16px;
 	}
 </style>
+
+<script>
+
+	import { inView } from "motion";
+	
+	 
+	
+	const elementmedanimation1 = document.querySelector(".elementmedanimation1");
+	
+	inView(elementmedanimation1, () => {
+	
+	elementmedanimation1.classList.add("animate__animated", "animate__fadeInUp", "animate__delay-1s");
+	
+	}); 
+	
+	 
+	
+	const elementmedanimation2 = document.querySelector(".elementmedanimation2");
+	
+	inView(elementmedanimation2, () => {
+	
+	elementmedanimation2.classList.add("animate__animated", "animate__fadeInLeft" , "animate__delay-1s");
+	
+	}); 
+	
+	
+	const elementmedanimation3 = document.querySelector(".elementmedanimation3");
+	
+	inView(elementmedanimation3, () => {
+	
+	elementmedanimation3.classList.add("animate__animated", "animate__fadeInRight", "animate__delay-1s");
+	
+	}); 
+	
+	</script>
